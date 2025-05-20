@@ -37,7 +37,6 @@ cat <<WALLBASH >"${confDir}/hypr/themes/wallbash.conf"
 
 
 \$CODE_THEME=$(get_hyprConf 'CODE_THEME')
-\$SDDM_THEME=$(get_hyprConf 'SDDM_THEME')
 
 # // ----------------------------
 # README:

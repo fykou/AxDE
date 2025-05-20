@@ -293,12 +293,8 @@ pkg_installed() {
 }
 
 get_aurhlpr() {
-    if pkg_installed yay; then
-        aurhlpr="yay"
-    elif pkg_installed paru; then
-        # shellcheck disable=SC2034
-        aurhlpr="paru"
-    fi
+    aurhlpr="paru"
+    
 }
 
 set_conf() {
@@ -374,7 +370,6 @@ get_hyprConf() {
         [DOCUMENT_FONT_SIZE]="document-font-size"
         [MONOSPACE_FONT_SIZE]="monospace-font-size"
         # [CODE_THEME]="Wallbash"
-        # [SDDM_THEME]=""
     )
 
     # Try parse gsettings

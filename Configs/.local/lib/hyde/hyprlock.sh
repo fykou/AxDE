@@ -92,7 +92,6 @@ mpris_icon() {
     declare -A player_dict=(
         ["default"]=""
         ["spotify"]=""
-        ["firefox"]=""
         ["vlc"]="嗢"
         ["google-chrome"]=""
         ["opera"]=""

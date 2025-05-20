@@ -40,13 +40,3 @@ fi
 
 # # Always mkdir a path (this doesn't inhibit functionality to make a single dir)
 # alias mkdir='mkdir -p'
-
-#  Plugins 
-# manually add your oh-my-zsh plugins here
-plugins=(
-    "sudo"
-    # "git"                     # (default)
-    # "zsh-autosuggestions"     # (default)
-    # "zsh-syntax-highlighting" # (default)
-    # "zsh-completions"         # (default)
-)
