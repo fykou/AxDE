@@ -66,6 +66,7 @@ nwg-displays                                           # monitor management util
 fzf                                                    # Command-line fuzzy finder
 
 # --------------------------------------------------- // Shell
+zsh                                                    # zsh shell
 eza|zsh                                                # file lister for zsh
 starship|zsh                                           # customizable shell prompt written in Rust
 # starship-git                                         # The cross-shell prompt for astronauts  
