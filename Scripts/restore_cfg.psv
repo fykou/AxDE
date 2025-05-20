@@ -50,7 +50,7 @@ S|${HOME}/.config/hypr|workflows|hyprland
 # S|${HOME}/.config/hyde|wallbash|hyprland
 # 
 # S|${HOME}/.local/share|hyde|hyprland
-S|${HOME}/.local/|lib|hyprland
+S|${HOME}/.local|lib|hyprland
 # 
 #  Editor 
 # S|${HOME}/.config/VSCodium/User|settings.json|vscodium
@@ -73,7 +73,7 @@ S|${HOME}/.config/starship|starship.toml|starship
 S|${HOME}|.zshenv|zsh
 # 
 #  SSH 
-S|${HOME}|.ssh .ssh|1password
+S|${HOME}/.ssh|.ssh|1password
 # 
 #  Vim 
 S|${HOME}/.config/|nvim|neovim
