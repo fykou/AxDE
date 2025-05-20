@@ -2,7 +2,7 @@
 
 scrDir=$(dirname "$(realpath "$0")")
 
-myShell = "zsh"
+myShell="zsh"
 
 if ! source "${scrDir}/global_fn.sh"; then
     echo "Error: unable to source global_fn.sh..."
