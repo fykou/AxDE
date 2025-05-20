@@ -3,8 +3,6 @@ wf-recorder                                          # Screen recorder for wlroo
 steam                                                  # gaming platform
 gamemode                                               # daemon and library for game optimizations
 lutris                                               # Lutris is an open source gaming platform for Linux
-spotify                                                # proprietary music streaming service
-spicetify-cli                                          # cli to customize spotify client
 neovim                                               # vim based text editor
 vscodium                                              # Full oss text editor
 vscodium-marketplace|vscodium                         # VSCodium marketplace
