@@ -29,7 +29,8 @@ B = Backup - Backup the target
 
 
  Hypr core files 
-S|${HOME}/.config/hypr|hyprland.conf workflows.conf animations.conf windowrules.conf keybindings.conf userprefs.conf monitors.conf|hyprland
+S|${HOME}/.config/hypr|hyprland.conf|hyprland
+S|${HOME}/.config/hypr|workflows.conf animations.conf windowrules.conf keybindings.conf userprefs.conf monitors.conf|hyprland
 S|${HOME}/.config/hypr|nvidia.conf|hyprland nvidia-utils
 S|${HOME}/.config/hypr|animations|hyprland  
 S|${HOME}/.config/hypr|workflows|hyprland
@@ -38,7 +39,6 @@ S|${HOME}/.config/hypr|workflows|hyprland
 # S|${HOME}/.config/systemd|user|systemd
 # S|${HOME}/.local/state/hyde|hyprland.conf|hyprland
 
-# S|${HOME}/.config/hypr|hyprland.conf|hyprland
 # S|${HOME}/.local/bin|hyde-shell hydectl|hyprland
 # S|${HOME}/.config|gtk-3.0|nwg-look
 # S|${HOME}/.config|nwg-look|nwg-look
@@ -61,22 +61,22 @@ S|${HOME}/.config/waybar|modules config.jsonc theme.css style.css|waybar
 # 
 #  Terminal 
 # S|${HOME}/.config|lsd|lsd
-# S|${HOME}/.config|fastfetch|fastfetch
+S|${HOME}/.config|fastfetch|fastfetch
 # S|${HOME}/.local/share/fastfetch/presets|hyde|fastfetch
 # 
-# S|${HOME}/.config/kitty|hyde.conf theme.conf|kitty
-# S|${HOME}/.config/kitty|kitty.conf|kitty
+S|${HOME}/.config/kitty|hyde.conf theme.conf|kitty
+S|${HOME}/.config/kitty|kitty.conf|kitty
 # 
 #  Shell 
-# S|${HOME}|.zshrc .user.zsh|zsh  
-# S|${HOME}/.config/starship|starship.toml|starship
-# S|${HOME}|.zshenv|zsh
+S|${HOME}|.zshrc .user.zsh|zsh  
+S|${HOME}/.config/starship|starship.toml|starship
+S|${HOME}|.zshenv|zsh
 # 
 #  SSH 
-# S|${HOME}|.ssh .ssh|1password
+S|${HOME}|.ssh .ssh|1password
 # 
 #  Vim 
-# S|${HOME}/.config/|nvim|neovim
+S|${HOME}/.config/|nvim|neovim
 # 
 #  File Explorer 
 # S|${HOME}/.local/state|dolphinstaterc|dolphin
