@@ -36,6 +36,7 @@
         "network",
         "pulseaudio",
         "pulseaudio#microphone",
+        "custom/power",
         "custom/r_end",
         "custom/padd"
     ],
@@ -181,6 +182,15 @@
         "on-scroll-down": "volumecontrol.sh -i d",
         "tooltip-format": "{format_source} {source_desc} // {source_volume}%",
         "scroll-step": 5
+    },
+    "custom/power": {
+        "format": "{}",
+        "rotate": 0,
+        "exec": "echo ; echo  logout",
+        "on-click": "logoutlaunch.sh 2",
+        "on-click-right": "logoutlaunch.sh 1",
+        "interval": 86400, // once every day
+        "tooltip": true
     },
     "custom/l_end": {
         "format": " ",
