@@ -11,7 +11,7 @@ fi
 if chk_list "${myShell}" "${shlList[@]}"; then
     print_log -sec "SHELL" -stat "detected" "${myShell}"
 else
-    print_log -sec "SHELL" -err "error" "no shell found..."
+    print_log -sec "SHELL" -err "error" "attempted to set ${myShell} but failed to find shell..."
     exit 1
 fi
 
