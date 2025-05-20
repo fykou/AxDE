@@ -29,80 +29,80 @@ B = Backup - Backup the target
 
 
  Hyde core files 
-S|${HOME}/.config/hyde|config.toml|hyprland
 S|${HOME}/.config/hypr|hyde.conf workflows.conf animations.conf windowrules.conf keybindings.conf userprefs.conf monitors.conf|hyprland
 S|${HOME}/.config/hypr|nvidia.conf|hyprland nvidia-utils
-S|${HOME}/.config/hypr/themes|theme.conf wallbash.conf colors.conf|hyprland
-S|${HOME}/.config/systemd|user|systemd
-S|${HOME}/.local/state/hyde|hyprland.conf|hyprland
+# S|${HOME}/.config/hypr/themes|theme.conf wallbash.conf colors.conf|hyprland
+# S|${HOME}/.config/systemd|user|systemd
+# S|${HOME}/.local/state/hyde|hyprland.conf|hyprland
 
-S|${HOME}/.config/hypr|hyprland.conf|hyprland
-S|${HOME}/.local/bin|hyde-shell hydectl|hyprland
+# S|${HOME}/.config/hypr|hyprland.conf|hyprland
+# S|${HOME}/.local/bin|hyde-shell hydectl|hyprland
 # S|${HOME}/.config|gtk-3.0|nwg-look
 # S|${HOME}/.config|nwg-look|nwg-look
 # S|${HOME}/.config|xsettingsd|nwg-look
 # S|${HOME}|.gtkrc-2.0|nwg-look
 # S|${HOME}/.config|Kvantum|kvantum
-S|${HOME}/.config|qt5ct|qt5ct
-S|${HOME}/.config|qt6ct|qt6ct
-S|${HOME}/.config/hyde|wallbash|hyprland
-S|${HOME}/.config/hypr|animations|hyprland  
-S|${HOME}/.config/hypr|workflows|hyprland
-
-S|${HOME}/.local/share|hyde|hyprland
-S|${HOME}/.local/lib|hyde|hyprland
-
- Editor 
-S|${HOME}/.config/VSCodium/User|settings.json|vscodium
-
- Bar 
-S|${HOME}/.config/waybar|config.ctl|waybar
-S|${HOME}/.config/waybar|modules config.jsonc theme.css style.css|waybar
-
- Terminal 
-S|${HOME}/.config|lsd|lsd
-S|${HOME}/.config|fastfetch|fastfetch
-S|${HOME}/.local/share/fastfetch/presets|hyde|fastfetch
-
-S|${HOME}/.config/kitty|hyde.conf theme.conf|kitty
-S|${HOME}/.config/kitty|kitty.conf|kitty
-
- Shell 
-S|${HOME}|.zshrc .user.zsh|zsh  
-S|${HOME}/.config/starship|starship.toml|starship
-S|${HOME}|.zshenv|zsh
-
- SSH 
-S|${HOME}|.ssh .ssh|1password
-
- Vim 
-S|${HOME}/.config/|nvim|neovim
-
- File Explorer 
-S|${HOME}/.local/state|dolphinstaterc|dolphin
-S|${HOME}/.config|baloofilerc|dolphin
-S|${HOME}/.config/menus|applications.menu|dolphin
-S|${HOME}/.config|dolphinrc|dolphin
-S|${HOME}/.config|kdeglobals|dolphin
-S|${HOME}/.local/share/kio/servicemenus|hydewallpaper.desktop|dolphin
-S|${HOME}/.local/share/kxmlgui5|dolphin|dolphin
-S|${HOME}/.local/share|dolphin|dolphin
-
- Wayland 
-S|${HOME}/.config|spotify-flags.conf|spotify
-S|${HOME}/.config|codium-flags.conf|vscodium
-S|${HOME}/.config|electron-flags.conf|electron
-
- Notifications 
-S|${HOME}/.config|dunst|dunst
-
- Launcher 
-S|${HOME}/.config|rofi|rofi
-S|${HOME}/.config|wlogout|wlogout
-
- Lock Screen 
-S|${HOME}/.config/hypr|hyprlock.conf|hyprlock
-S|${HOME}/.config/hypr|hyprlock|hyprlock
-
- Idle daemon 
-S|${HOME}/.config/hypr|hypridle.conf|hypridle
+# S|${HOME}/.config|qt5ct|qt5ct
+# S|${HOME}/.config|qt6ct|qt6ct
+# S|${HOME}/.config/hyde|wallbash|hyprland
+# S|${HOME}/.config/hypr|animations|hyprland  
+# S|${HOME}/.config/hypr|workflows|hyprland
+# 
+# S|${HOME}/.local/share|hyde|hyprland
+# S|${HOME}/.local/lib|hyde|hyprland
+# 
+#  Editor 
+# S|${HOME}/.config/VSCodium/User|settings.json|vscodium
+# 
+#  Bar 
+# S|${HOME}/.config/waybar|config.ctl|waybar
+# S|${HOME}/.config/waybar|modules config.jsonc theme.css style.css|waybar
+# 
+#  Terminal 
+# S|${HOME}/.config|lsd|lsd
+# S|${HOME}/.config|fastfetch|fastfetch
+# S|${HOME}/.local/share/fastfetch/presets|hyde|fastfetch
+# 
+# S|${HOME}/.config/kitty|hyde.conf theme.conf|kitty
+# S|${HOME}/.config/kitty|kitty.conf|kitty
+# 
+#  Shell 
+# S|${HOME}|.zshrc .user.zsh|zsh  
+# S|${HOME}/.config/starship|starship.toml|starship
+# S|${HOME}|.zshenv|zsh
+# 
+#  SSH 
+# S|${HOME}|.ssh .ssh|1password
+# 
+#  Vim 
+# S|${HOME}/.config/|nvim|neovim
+# 
+#  File Explorer 
+# S|${HOME}/.local/state|dolphinstaterc|dolphin
+# S|${HOME}/.config|baloofilerc|dolphin
+# S|${HOME}/.config/menus|applications.menu|dolphin
+# S|${HOME}/.config|dolphinrc|dolphin
+# S|${HOME}/.config|kdeglobals|dolphin
+# S|${HOME}/.local/share/kio/servicemenus|hydewallpaper.desktop|dolphin
+# S|${HOME}/.local/share/kxmlgui5|dolphin|dolphin
+# S|${HOME}/.local/share|dolphin|dolphin
+# 
+#  Wayland 
+# S|${HOME}/.config|spotify-flags.conf|spotify
+# S|${HOME}/.config|codium-flags.conf|vscodium
+# S|${HOME}/.config|electron-flags.conf|electron
+# 
+#  Notifications 
+# S|${HOME}/.config|dunst|dunst
+# 
+#  Launcher 
+# S|${HOME}/.config|rofi|rofi
+# S|${HOME}/.config|wlogout|wlogout
+# 
+#  Lock Screen 
+# S|${HOME}/.config/hypr|hyprlock.conf|hyprlock
+# S|${HOME}/.config/hypr|hyprlock|hyprlock
+# 
+#  Idle daemon 
+# S|${HOME}/.config/hypr|hypridle.conf|hypridle
+# 

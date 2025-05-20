@@ -122,12 +122,6 @@ function _load_post_init() {
     
     autoload -U compinit && compinit
 
-    # Load hydectl completion
-    if command -v hydectl &>/dev/null; then
-        compdef _hydectl hydectl
-        eval "$(hydectl completion zsh)"
-    fi
-
     # Initiate fzf
     if command -v fzf &>/dev/null; then
         eval "$(fzf --zsh)"
@@ -140,65 +134,6 @@ function _load_post_init() {
 
     # User rc file always overrides
     [[ -f $HOME/.zshrc ]] && source $HOME/.zshrc
-
-}
-
-function _load_if_terminal {
-    if [ -t 1 ]; then
-
-        unset -f _load_if_terminal
-
-
-        if command -v starship &>/dev/null; then
-            # ===== START Initialize Starship prompt =====
-            eval "$(starship init zsh)"
-            export STARSHIP_CACHE=$XDG_CACHE_HOME/starship
-            export STARSHIP_CONFIG=$XDG_CONFIG_HOME/starship/starship.toml
-        fi
-
-        # Optionally load user configuration // useful for customizing the shell without modifying the main file
-        if [[ -f $HOME/.hyde.zshrc ]]; then
-            source $HOME/.hyde.zshrc # for backward compatibility
-        elif [[ -f $HOME/.user.zsh ]]; then
-            source $HOME/.user.zsh # renamed to .user.zsh for intuitiveness that it is a user config
-        fi
-
-
-        #  Below this line are the commands that are executed after the prompt appears
-
-        autoload -Uz add-zsh-hook
-        # add-zsh-hook zshaddhistory load_omz_deferred # loads after the first command is added to history
-        # add-zsh-hook precmd load_omz_deferred # Loads when shell is ready to accept commands
-        # add-zsh-hook preexec load_omz_deferred # Loads before the first command executes
-
-        # TODO: add handlers in pm.sh
-        # for these aliases please manually add the following lines to your .zshrc file.(Using yay as the aur helper)
-        # pc='yay -Sc' # remove all cached packages
-        # po='yay -Qtdq | ${PM_COMMAND[@]} -Rns -' # remove orphaned packages
-
-        alias c='clear' \
-            in='${PM_COMMAND[@]} install' \
-            un='${PM_COMMAND[@]} remove' \
-            up='${PM_COMMAND[@]} upgrade' \
-            pl='${PM_COMMAND[@]} search installed' \
-            pa='${PM_COMMAND[@]} search all' \
-            vc='code' \
-            fastfetch='fastfetch --logo-type kitty' \
-            ..='cd ..' \
-            ...='cd ../..' \
-            .3='cd ../../..' \
-            .4='cd ../../../..' \
-            .5='cd ../../../../..' \
-            mkdir='mkdir -p' \
-            ffec='_fuzzy_edit_search_file_content' \
-            ffcd='_fuzzy_change_directory' \
-            ffe='_fuzzy_edit_search_file'
-
-        # Some binds won't work on first prompt when deferred
-        bindkey '\e[H' beginning-of-line
-        bindkey '\e[F' end-of-line
-
-    fi
 
 }
 
@@ -240,13 +175,10 @@ setopt HIST_EXPIRE_DUPS_FIRST # Expire a duplicate event first when trimming his
 setopt HIST_IGNORE_DUPS       # Do not record an event that was just recorded again
 setopt HIST_IGNORE_ALL_DUPS   # Delete an old recorded event if a new event is a duplicate
 
-# HyDE Package Manager
-PM_COMMAND=(hyde-shell pm)
-
-export XDG_CONFIG_HOME XDG_CONFIG_DIR XDG_DATA_HOME XDG_STATE_HOME \
-    XDG_CACHE_HOME XDG_DESKTOP_DIR XDG_DOWNLOAD_DIR \
-    XDG_TEMPLATES_DIR XDG_PUBLICSHARE_DIR XDG_DOCUMENTS_DIR \
-    XDG_MUSIC_DIR XDG_PICTURES_DIR XDG_VIDEOS_DIR \
-    SCREENRC ZSH_AUTOSUGGEST_STRATEGY HISTFILE
+# export XDG_CONFIG_HOME XDG_CONFIG_DIR XDG_DATA_HOME XDG_STATE_HOME \
+#     XDG_CACHE_HOME XDG_DESKTOP_DIR XDG_DOWNLOAD_DIR \
+#     XDG_TEMPLATES_DIR XDG_PUBLICSHARE_DIR XDG_DOCUMENTS_DIR \
+#     XDG_MUSIC_DIR XDG_PICTURES_DIR XDG_VIDEOS_DIR \
+#     SCREENRC ZSH_AUTOSUGGEST_STRATEGY HISTFILE
 
 _load_if_terminal
