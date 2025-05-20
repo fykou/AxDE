@@ -45,12 +45,10 @@ while getopts idrstmnh: RunStep; do
     r) flg_Restore=1 ;;
     s) flg_Service=1 ;;
     n)
-        # shellcheck disable=SC2034
         export flg_Nvidia=0
         print_log -r "[nvidia] " -b "Ignored :: " "skipping Nvidia actions"
         ;;
     h)
-        # shellcheck disable=SC2034
         export flg_Shell=0
         print_log -r "[shell] " -b "Reevaluate :: " "shell options"
         ;;
@@ -148,11 +146,6 @@ EOF
     echo ""
     
     export getAur="paru"
-    print_log -sec "AUR" -warn "Defaulting to paru"
-
-    export myShell="zsh"
-    print_log -sec "shell" -warn "Defaulting to zsh"
-
 
     if ! grep -q "^#user packages" "${scrDir}/install_pkg.lst"; then
         print_log -sec "pkg" -crit "No user packages found..." "Log file at ${cacheDir}/logs/${HYDE_LOG}/install.sh"
@@ -186,12 +179,12 @@ EOF
     "${scrDir}/restore_fnt.sh"
     "${scrDir}/restore_cfg.sh"
     "${scrDir}/restore_thm.sh"
-    print_log -g "[generate] " "cache ::" "Wallpapers..."
-    if [ "${flg_DryRun}" -ne 1 ]; then
-        "$HOME/.local/lib/hyde/swwwallcache.sh" -t ""
-        "$HOME/.local/lib/hyde/theme.switch.sh" -q || true
-        echo "[install] reload :: Hyprland"
-    fi
+    # print_log -g "[generate] " "cache ::" "Wallpapers..."
+    # if [ "${flg_DryRun}" -ne 1 ]; then
+    #     "$HOME/.local/lib/hyde/swwwallcache.sh" -t ""
+    #     "$HOME/.local/lib/hyde/theme.switch.sh" -q || true
+    #     echo "[install] reload :: Hyprland"
+    # fi
 
 fi
 

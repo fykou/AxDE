@@ -15,6 +15,8 @@ bluez-utils                                            # bluetooth utility cli
 blueman                                                # bluetooth manager gui
 brightnessctl                                          # screen brightness control
 udiskie                                                # manage removable media
+# xdg-desktop-portal-gtk                               # xdg desktop portal using gtk
+# wf-recorder                                          # Screen recorder for wlroots-based compositors such as sway
 
 # --------------------------------------------------- // Window Manager
 hyprland                                               # wlroots-based wayland compositor
@@ -72,4 +74,12 @@ fastfetch                                              # system information fetc
 1password
 
 # --------------------------------------------------- // HyDE
-hypridle                                               # idle daemon
+
+# --------------------------------------------------- // Misc
+steam                                                  # gaming platform
+gamemode                                               # daemon and library for game optimizations
+lutris                                                 # Lutris is an open source gaming platform for Linux
+neovim                                                 # vim based text editor
+vscodium                                               # Full oss text editor
+vscodium-marketplace|vscodium                          # VSCodium marketplace
+deno
