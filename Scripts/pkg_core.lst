@@ -15,6 +15,7 @@ bluez-utils                                            # bluetooth utility cli
 blueman                                                # bluetooth manager gui
 brightnessctl                                          # screen brightness control
 udiskie                                                # manage removable media
+openssh
 # xdg-desktop-portal-gtk                               # xdg desktop portal using gtk
 # wf-recorder                                          # Screen recorder for wlroots-based compositors such as sway
 

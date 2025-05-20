@@ -73,7 +73,7 @@ S|${HOME}/.config/starship|starship.toml|starship
 S|${HOME}|.zshenv|zsh
 # 
 #  SSH 
-S|${HOME}/.ssh|.ssh|1password
+S|${HOME}/.ssh|.ssh/config|1password
 # 
 #  Vim 
 S|${HOME}/.config/|nvim|neovim
