@@ -33,9 +33,9 @@ hyprsunset                                             # blue light filter
 
 # --------------------------------------------------- // Dependencies
 polkit-gnome                                           # authentication agent
-xdg-desktop-portal-hyprland                            # xdg desktop portal for hyprland
-xdg-desktop-portal-gtk                                 # file picker and dbus  integration
-xdg-user-dirs                                          # Manage user directories like ~/Desktop and ~/Music
+# xdg-desktop-portal-hyprland                            # xdg desktop portal for hyprland
+# xdg-desktop-portal-gtk                                 # file picker and dbus  integration
+# xdg-user-dirs                                          # Manage user directories like ~/Desktop and ~/Music
 pacman-contrib                                         # for system update check
 parallel                                               # for parallel processing
 jq                                                     # for json processing
@@ -47,20 +47,19 @@ libnotify                                              # for notifications
 noto-fonts-emoji                                       # emoji font
 
 # --------------------------------------------------- // Theming
-nwg-look                                               # gtk configuration tool
-qt5ct                                                  # qt5 configuration tool
-qt6ct                                                  # qt6 configuration tool
-kvantum                                                # svg based qt6 theme engine
-kvantum-qt5                                            # svg based qt5 theme engine
-qt5-wayland                                            # wayland support in qt5
-qt6-wayland                                            # wayland support in qt6
+# nwg-look                                               # gtk configuration tool
+# qt5ct                                                  # qt5 configuration tool
+# qt6ct                                                  # qt6 configuration tool
+# kvantum                                                # svg based qt6 theme engine
+# kvantum-qt5                                            # svg based qt5 theme engine
+# qt5-wayland                                            # wayland support in qt5
+# qt6-wayland                                            # wayland support in qt6
 
 # --------------------------------------------------- // Applications
-kitty                                                  # terminal
+# kitty                                                  # terminal
 dolphin                                                # kde file manager
 ark                                                    # kde file archiver
 unzip                                                  # extracting zip files
-vim                                                    # terminal text editor
 code                                                   # ide text editor
 nwg-displays                                           # monitor management utility
 fzf                                                    # Command-line fuzzy finder
@@ -69,7 +68,6 @@ fzf                                                    # Command-line fuzzy find
 zsh                                                    # zsh shell
 eza|zsh                                                # file lister for zsh
 starship|zsh                                           # customizable shell prompt written in Rust
-# starship-git                                         # The cross-shell prompt for astronauts  
 fastfetch                                              # system information fetch tool
 1password
 
