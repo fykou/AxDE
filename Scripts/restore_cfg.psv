@@ -55,8 +55,8 @@ S|${HOME}/.config/hypr|nvidia.conf|hyprland nvidia-utils
 # S|${HOME}/.config/VSCodium/User|settings.json|vscodium
 # 
 #  Bar 
-# S|${HOME}/.config/waybar|config.ctl|waybar
-# S|${HOME}/.config/waybar|modules config.jsonc theme.css style.css|waybar
+S|${HOME}/.config/waybar|config.ctl|waybar
+S|${HOME}/.config/waybar|modules config.jsonc theme.css style.css|waybar
 # 
 #  Terminal 
 # S|${HOME}/.config|lsd|lsd
