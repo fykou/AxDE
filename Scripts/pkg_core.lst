@@ -77,9 +77,9 @@ fastfetch                                              # system information fetc
 
 # --------------------------------------------------- // Misc
 steam                                                  # gaming platform
-gamemode                                               # daemon and library for game optimizations
-lutris                                                 # Lutris is an open source gaming platform for Linux
-neovim                                                 # vim based text editor
-vscodium                                               # Full oss text editor
-vscodium-marketplace|vscodium                          # VSCodium marketplace
-deno
+# gamemode                                               # daemon and library for game optimizations
+# lutris                                                 # Lutris is an open source gaming platform for Linux
+# neovim                                                 # vim based text editor
+# vscodium                                               # Full oss text editor
+# vscodium-marketplace|vscodium                          # VSCodium marketplace
+# deno
