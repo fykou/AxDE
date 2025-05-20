@@ -58,7 +58,7 @@ noto-fonts-emoji                                       # emoji font
 # qt6-wayland                                            # wayland support in qt6
 
 # --------------------------------------------------- // Applications
-# kitty                                                  # terminal
+kitty                                                  # terminal
 dolphin                                                # kde file manager
 ark                                                    # kde file archiver
 unzip                                                  # extracting zip files
