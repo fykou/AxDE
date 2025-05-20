@@ -139,14 +139,6 @@ show_today= true		# Detailed description of today in tooltip
 forecast_days= 3 		# Number of days to show forecast (0-3)
 location = ''			# Location/coordinates string for the weather output
 
-[cava.stdout]
-# 'cava.sh stdout' configuration
-max_instances = 1 # Maximum number of cava instances // fix and workaround when a process won't kill 'cava ' process
-bar = "▁▂▃▄▅▆▇█"
-width = 20
-range = 7         # Number of (bars -1)
-standby = "🎶"
-
 [cava.hyprlock]
 # 'cava.sh hyprlock' configuration
 max_instances = 1 # Maximum number of cava instances // fix and workaround when a process won't kill 'cava ' process

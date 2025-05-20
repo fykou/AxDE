@@ -50,7 +50,7 @@ print_prompt() {
 }
 
 scrDir=$(dirname "$(realpath "$0")")
-# shellcheck disable=SC1091
+
 # if [ $? -ne 0 ]; then
 if ! source "${scrDir}/global_fn.sh"; then
     echo "Error: unable to source global_fn.sh..."

@@ -2,7 +2,7 @@
 
 scrDir="$(dirname "$(realpath "$0")")"
 export scrDir
-# shellcheck disable=SC1091
+
 source "${scrDir}/globalcontrol.sh"
 confDir="${confDir:-$XDG_CONFIG_HOME}"
 cacheDir="${cacheDir:-$XDG_CACHE_HOME/hyde}"

@@ -1,18 +1,14 @@
 #!/usr/bin/env bash
-#|---/ /+---------------------------+---/ /|#
-#|--/ /-| Script to configure shell |--/ /-|#
-#|-/ /--| Prasanth Rangan           |-/ /--|#
-#|/ /---+---------------------------+/ /---|#
 
 scrDir=$(dirname "$(realpath "$0")")
-# shellcheck disable=SC1091
+
 if ! source "${scrDir}/global_fn.sh"; then
     echo "Error: unable to source global_fn.sh..."
     exit 1
 fi
 
-# shellcheck disable=SC2154
-if chk_list "myShell" "${shlList[@]}"; then
+
+if chk_list "${myShell}" "${shlList[@]}"; then
     print_log -sec "SHELL" -stat "detected" "${myShell}"
 else
     print_log -sec "SHELL" -err "error" "no shell found..."

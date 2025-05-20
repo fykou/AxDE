@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# shellcheck disable=SC2154
+
 
 #// set variables
 
 scrDir="$(dirname "$(realpath "$0")")"
-# shellcheck disable=SC1091
+
 source "${scrDir}/globalcontrol.sh"
 [ -z "${HYDE_THEME}" ] && echo "ERROR: unable to detect theme" && exit 1
 get_themes
@@ -14,7 +14,7 @@ confDir="${XDG_CONFIG_HOME:-$(xdg-user-dir CONFIG)}"
 Theme_Change() {
   local x_switch=$1
 
-  # shellcheck disable=SC2154
+  
   for i in "${!thmList[@]}"; do
     if [ "${thmList[i]}" == "${HYDE_THEME}" ]; then
       if [ "${x_switch}" == 'n' ]; then
@@ -100,16 +100,16 @@ set_conf "HYDE_THEME" "${themeSet}"
 print_log -sec "theme" -stat "apply" "${themeSet}"
 
 export reload_flag=1
-# shellcheck disable=SC1091
+
 source "${scrDir}/globalcontrol.sh"
 
 #// hypr
-# shellcheck disable=SC2154
+
 # Updates the compositor theme data in advance
 [[ -n $HYPRLAND_INSTANCE_SIGNATURE ]] && hyprctl keyword misc:disable_autoreload 1 -q
 sanitize_hypr_theme "${HYDE_THEME_DIR}/hypr.theme" "${XDG_CONFIG_HOME}/hypr/themes/theme.conf"
 
-# shellcheck disable=SC2154
+
 if [ "${enableWallDcol}" -eq 0 ]; then
   GTK_THEME="$(get_hyprConf "GTK_THEME")"
 else

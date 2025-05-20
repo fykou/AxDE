@@ -3,7 +3,7 @@
 #// set variables
 
 # shellcheck source=$HOME/.local/bin/hyde-shell
-# shellcheck disable=SC1091
+
 if ! source "$(which hyde-shell)"; then
     echo "[wallbash] code :: Error: hyde-shell not found."
     echo "[wallbash] code :: Is HyDE installed?"
@@ -50,7 +50,7 @@ r_override="window{width:100%;}
 #// launch rofi menu
 
 RofiSel=$(
-    # shellcheck disable=SC2154
+    
     find "${rofiStyleDir}" -type f -exec grep -l "Attr.*launcher.*" {} \; |
         while read -r file; do
             baseName=$(basename "${file}" .rasi)

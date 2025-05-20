@@ -3,16 +3,16 @@
 #// set variables
 
 scrDir="$(dirname "$(realpath "$0")")"
-# shellcheck disable=SC1091
+
 source "${scrDir}/globalcontrol.sh"
 export scrDir
 export thmbDir
 export dcolDir
-# shellcheck disable=SC2154
+
 [ -d "${HYDE_THEME_DIR}" ] && cacheIn="${HYDE_THEME_DIR}" || exit 1
 [ -d "${thmbDir}" ] || mkdir -p "${thmbDir}"
 [ -d "${dcolDir}" ] || mkdir -p "${dcolDir}"
-# shellcheck disable=SC2154
+
 [ -d "${cacheDir}/landing" ] || mkdir -p "${cacheDir}/landing"
 [ -d "${cacheDir}/wallbash" ] || mkdir -p "${cacheDir}/wallbash"
 
@@ -134,6 +134,6 @@ fn_envar_cache
 wallPathArray=("${cacheIn}")
 wallPathArray+=("${WALLPAPER_CUSTOM_PATHS[@]}")
 get_hashmap "${wallPathArray[@]}" --no-notify
-# shellcheck disable=SC2154
+
 parallel --bar --link "fn_wallcache${mode}" ::: "${wallHash[@]}" ::: "${wallList[@]}"
 exit 0

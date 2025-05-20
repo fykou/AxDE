@@ -3,7 +3,7 @@
 #// set variables
 
 # shellcheck source=$HOME/.local/bin/hyde-shell
-# shellcheck disable=SC1091
+
 if ! source "$(which hyde-shell)"; then
     echo "[wallbash] code :: Error: hyde-shell not found."
     echo "[wallbash] code :: Is HyDE installed?"
@@ -112,14 +112,14 @@ case "$1" in
     # set rofi font override
     font_override="* {font: \"${font_name:-"JetBrainsMono Nerd Font"} ${font_scale}\";}"
 
-    # shellcheck disable=SC2154
+    
     elem_border=$((hypr_border * 5))
     icon_border=$((elem_border - 5))
 
     #// generate config
 
     ROFI_THEME_STYLE="${ROFI_THEME_STYLE:-1}"
-    # shellcheck disable=SC2154
+    
     case "${ROFI_THEME_STYLE}" in
     2 | "quad") # adapt to style 2
         elm_width=$(((20 + 12) * font_scale * 2))
@@ -150,7 +150,7 @@ esac
 #// launch rofi menu
 
 get_themes
-# shellcheck disable=SC2154
+
 rofiSel=$(
     i=0
     while [ $i -lt ${#thmList[@]} ]; do
@@ -167,6 +167,6 @@ rofiSel=$(
 
 if [ -n "${rofiSel}" ]; then
     "${LIB_DIR}/hyde/theme.switch.sh" -s "${rofiSel}"
-    # shellcheck disable=SC2154
+    
     notify-send -a "HyDE Alert" -i "${iconsDir}/Wallbash-Icon/hyde.png" " ${rofiSel}"
 fi

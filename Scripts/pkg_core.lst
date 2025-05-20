@@ -70,6 +70,7 @@ eza|zsh                                                # file lister for zsh
 starship|zsh                                           # customizable shell prompt written in Rust
 # starship-git                                         # The cross-shell prompt for astronauts  
 fastfetch                                              # system information fetch tool
+1password
 
 # --------------------------------------------------- // HyDE
 hypridle                                               # idle daemon

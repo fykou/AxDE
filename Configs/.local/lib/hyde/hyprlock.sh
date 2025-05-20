@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # shellcheck source=$HOME/.local/bin/hyde-shell
-# shellcheck disable=SC1091
+
 if ! source "$(which hyde-shell)"; then
     echo "[wallbash] code :: Error: hyde-shell not found."
     echo "[wallbash] code :: Is HyDE installed?"
@@ -118,15 +118,6 @@ mpris_thumb() { # Generate thumbnail for mpris
     pkill -USR2 hyprlock >/dev/null 2>&1 # updates the mpris thumbnail
 }
 
-fn_cava() {
-    local tempFile=/tmp/hyprlock-cava
-    [ -f "${tempFile}" ] && tail -n 1 "${tempFile}"
-    config_file="$HYDE_RUNTIME_DIR/cava.hyprlock"
-    if [ "$(pgrep -c -f "cava -p ${config_file}")" -eq 0 ]; then
-        trap 'rm -f ${tempFile}' EXIT
-        "$scrDir/cava.sh" hyprlock >${tempFile} 2>&1
-    fi
-}
 
 fn_art() {
     echo "${cacheDir}/landing/mpris.art"

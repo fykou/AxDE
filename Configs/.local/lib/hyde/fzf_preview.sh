@@ -1,7 +1,7 @@
 #! /bin/env bash
 
 scrDir=$(dirname "$(realpath "$0")")
-# shellcheck disable=SC1091
+
 source "$scrDir/globalcontrol.sh"
 
 PREVIEW=${1}

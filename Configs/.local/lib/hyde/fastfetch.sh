@@ -23,7 +23,7 @@ USAGE
 # Source state and os-release
 # shellcheck source=/dev/null
 [ -f "$HYDE_STATE_HOME/staterc" ] && source "$HYDE_STATE_HOME/staterc"
-# shellcheck disable=SC1091
+
 [ -f "/etc/os-release" ] && source "/etc/os-release"
 
 # Set the variables

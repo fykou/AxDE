@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# shellcheck disable=SC2154
+
 
 scrDir="$(dirname "$(realpath "$0")")"
-# shellcheck disable=SC1091
+
 source "${scrDir}/globalcontrol.sh"
 
 # // Help message
@@ -121,7 +121,7 @@ Wall_Select() {
     # set rofi font override
     font_override="* {font: \"${font_name:-"JetBrainsMono Nerd Font"} ${font_scale}\";}"
 
-    # shellcheck disable=SC2154
+    
     elem_border=$((hypr_border * 3))
 
     #// scale for monitor

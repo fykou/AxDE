@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# shellcheck disable=SC2154
+
 
 # Function to create wallbash substitutions
 create_wallbash_substitutions() {
@@ -102,10 +102,10 @@ fn_wallbash() {
         fi
     fi
 
-    # shellcheck disable=SC1091
-    # shellcheck disable=SC2154
+    
+    
     [ -f "$HYDE_STATE_HOME/state" ] && source "$HYDE_STATE_HOME/state"
-    # shellcheck disable=SC1091
+    
     [ -f "$HYDE_STATE_HOME/config" ] && source "$HYDE_STATE_HOME/config"
     if [[ -n "${WALLBASH_SKIP_TEMPLATE[*]}" ]]; then
         for skip in "${WALLBASH_SKIP_TEMPLATE[@]}"; do
@@ -147,7 +147,7 @@ fn_wallbash() {
 
 scrDir="$(dirname "$(realpath "$0")")"
 export scrDir
-# shellcheck disable=SC1091
+
 source "${scrDir}/globalcontrol.sh"
 confDir="${XDG_CONFIG_HOME:-$(xdg-user-dir CONFIG)}"
 wallbash_image="${1}"
@@ -198,7 +198,7 @@ if [ -z "${wallbash_image}" ] || [ ! -f "${wallbash_image}" ]; then
     printf "Error: Input wallpaper not found!\n"
     exit 1
 fi
-# shellcheck disable=SC2154
+
 dcol_file="${dcolDir}/$(set_hash "${wallbash_image}").dcol"
 
 if [ ! -f "${dcol_file}" ]; then
@@ -208,15 +208,15 @@ fi
 set -a
 # shellcheck disable=SC1090
 source "${dcol_file}"
-# shellcheck disable=SC2154
+
 if [ -f "${HYDE_THEME_DIR}/theme.dcol" ] && [ "${enableWallDcol}" -eq 0 ]; then
-    # shellcheck disable=SC1091
+    
     source "${HYDE_THEME_DIR}/theme.dcol"
     print_log -sec "wallbash" -stat "override" "dominant colors from ${HYDE_THEME} theme"
     print_log -sec "wallbash" -stat " NOTE" "Remove \"${HYDE_THEME_DIR}/theme.dcol\" to use wallpaper dominant colors"
 fi
 
-# shellcheck disable=SC2154
+
 [ "${dcol_mode}" == "dark" ] && dcol_invt="light" || dcol_invt="dark"
 set +a
 
@@ -274,7 +274,7 @@ toml_write "${confDir}/kdeglobals" "Colors:View" "BackgroundNormal" "#${dcol_pry
     hyprctl keyword misc:disable_autoreload 1 -q
     trap "hyprctl reload config-only -q" EXIT
 }
-# shellcheck disable=SC2154
+
 if [ "${enableWallDcol}" -eq 0 ] && [[ "${reload_flag}" -eq 1 ]]; then
 
     print_log -sec "wallbash" -stat "apply ${dcol_mode} colors" "${HYDE_THEME} theme"

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# shellcheck disable=SC1091
+
 
 # xdg resolution
 export XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
@@ -284,8 +284,6 @@ pkg_installed() {
     if command -v "${pkgIn}" &>/dev/null; then
         return 0
     elif command -v "flatpak" &>/dev/null && flatpak info "${pkgIn}" &>/dev/null; then
-        return 0
-    elif hyde-shell pm.sh pq "${pkgIn}" &>/dev/null; then
         return 0
     else
         return 1

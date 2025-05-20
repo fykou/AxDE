@@ -3,7 +3,7 @@
 set -euo pipefail
 
 # shellcheck source=$HOME/.local/bin/hyde-shell
-# shellcheck disable=SC1091
+
 if ! source "$(command -v hyde-shell)"; then
     echo "[wf-recorder] code :: Error: hyde-shell not found."
     echo "[wf-recorder] code :: Is HyDE installed?"

@@ -1,8 +1,4 @@
 #!/usr/bin/env bash
-#|---/ /+------------------+---/ /|#
-#|--/ /-| Global functions |--/ /-|#
-#|-/ /--| Prasanth Rangan  |-/ /--|#
-#|/ /---+------------------+/ /---|#
 
 set -e
 
@@ -58,7 +54,7 @@ pkg_available() {
 aur_available() {
     local PkgIn=$1
 
-    # shellcheck disable=SC2154
+    
     if ${aurhlpr} -Si "${PkgIn}" &>/dev/null; then
         return 0
     else

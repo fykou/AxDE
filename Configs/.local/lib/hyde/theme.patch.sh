@@ -5,7 +5,7 @@
 #|/ /---+------------------------------+/ /---|#
 
 script_dir=$(dirname "$(realpath "$0")")
-# shellcheck disable=SC1091
+
 # if [ $? -ne 0 ]; then
 if ! source "${script_dir}/globalcontrol.sh"; then
     echo "Error: unable to source globalcontrol.sh..."

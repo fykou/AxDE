@@ -3,7 +3,7 @@
 #// set variables
 
 scrDir="$(dirname "$(realpath "$0")")"
-# shellcheck disable=SC1091
+
 source "${scrDir}/globalcontrol.sh"
 wallbashModes=("theme" "auto" "dark" "light")
 

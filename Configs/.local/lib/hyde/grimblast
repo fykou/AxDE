@@ -29,7 +29,7 @@ fi
 trap 'rm -f "$grimblastInstanceCheck"' EXIT
 
 getTargetDirectory() {
-    # shellcheck disable=SC1091
+    
     test -f "${XDG_CONFIG_HOME:-$HOME/.config}/user-dirs.dirs" &&
         source "${XDG_CONFIG_HOME:-$HOME/.config}/user-dirs.dirs"
 

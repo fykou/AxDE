@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# shellcheck disable=SC2154
+
 #|---/ /+------------------------------------+---/ /|#
 #|--/ /-| Script to extract fonts and themes |--/ /-|#
 #|-/ /--| Prasanth Rangan                    |-/ /--|#
@@ -9,7 +9,7 @@ flg_DryRun=${flg_DryRun:-0}
 
 scrDir=$(dirname "$(realpath "$0")")
 export log_section="extract"
-# shellcheck disable=SC1091
+
 if ! source "${scrDir}/global_fn.sh"; then
     echo -e "\e[31mError: unable to source global_fn.sh...\e[0m"
     exit 1
@@ -43,7 +43,7 @@ while read -r lst; do
     fi
 
     if [ -w "${tgt}" ]; then
-        # shellcheck disable=SC2154
+        
         [ "${flg_DryRun}" -eq 1 ] || tar -xzf "${cloneDir}/Source/arcs/${fnt}.tar.gz" -C "${tgt}/"
     else
         print_log -warn "not writable" "Extracting as root: ${tgt} "

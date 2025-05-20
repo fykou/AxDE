@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# shellcheck disable=SC2154
+
 
 if [[ -z $dcol_pry1 ]]; then
     cacheDir=${cacheDir:-$HOME/.cache/hyde}
-    # shellcheck disable=SC1091
+    
     source "${cacheDir}/wall.dcol"
 fi
 

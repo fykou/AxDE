@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# shellcheck disable=SC1091
+
 # Separated wallpaper script for swww backend
 # We will handle swww specific configurations here
 # add overrides in [wallpaper.swww] in ~/.config/hyde/config.toml
@@ -28,7 +28,7 @@ touch "${lockFile}"
 trap 'rm -f ${lockFile}' EXIT
 
 scrDir="$(dirname "$(realpath "$0")")"
-# shellcheck disable=SC1091
+
 source "${scrDir}/globalcontrol.sh"
 
 # Handle transition

@@ -3,9 +3,9 @@
 # detect hypr theme and initialize variables
 
 scrDir=$(dirname "$(realpath "$0")")
-# shellcheck disable=SC1091
+
 source "${scrDir}/globalcontrol.sh"
-# shellcheck disable=SC2154
+
 waybar_dir="${confDir}/waybar"
 modules_dir="$waybar_dir/modules"
 conf_ctl="$waybar_dir/config.ctl"

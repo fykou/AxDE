@@ -7,7 +7,7 @@ fi
 
 # source variables
 scrDir=$(dirname "$(realpath "$0")")
-# shellcheck disable=SC1091
+
 source "$scrDir/globalcontrol.sh"
 get_aurhlpr
 export -f pkg_installed

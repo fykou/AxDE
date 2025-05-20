@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 scrDir=$(dirname "$(realpath "$0")")
-# shellcheck disable=SC1091
+
 source "$scrDir/globalcontrol.sh"
 dock=${BATTERY_NOTIFY_DOCK:-false}
 

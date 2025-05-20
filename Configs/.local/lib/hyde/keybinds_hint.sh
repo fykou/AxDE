@@ -3,7 +3,7 @@
 pkill -x rofi && exit
 scrDir=$(dirname "$(realpath "$0")")
 scrDir="${scrDir:-$HOME/.local/lib/hyde}"
-# shellcheck disable=SC1091
+
 source "$scrDir/globalcontrol.sh"
 
 confDir="${XDG_CONFIG_HOME:-$HOME/.config}"

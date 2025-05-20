@@ -10,7 +10,7 @@ fi
 #// set file variables
 
 scrDir=$(dirname "$(realpath "$0")")
-# shellcheck disable=SC1091
+
 source "$scrDir/globalcontrol.sh"
 [ -n "${1}" ] && wlogoutStyle="${1}"
 wlogoutStyle=${wlogoutStyle:-$WLOGOUT_STYLE}
@@ -58,7 +58,7 @@ export fntSize=$((y_mon * 2 / 100))
 
 cacheDir="${HYDE_CACHE_HOME}"
 dcol_mode="${dcol_mode:-dark}"
-# shellcheck disable=SC1091
+
 [ -f "${cacheDir}/wall.dcol" ] && source "${cacheDir}/wall.dcol"
 
 #  Theme mode: detects the color-scheme set in hypr.theme and falls back if nothing is parsed.
@@ -67,7 +67,7 @@ if [ "${enableWallDcol}" -eq 0 ]; then
     HYDE_THEME_DIR="${HYDE_THEME_DIR:-$confDir/hyde/themes/$HYDE_THEME}"
     dcol_mode=$(get_hyprConf "COLOR_SCHEME")
     dcol_mode=${dcol_mode#prefer-}
-    # shellcheck disable=SC1091
+    
     [ -f "${HYDE_THEME_DIR}/theme.dcol" ] && source "${HYDE_THEME_DIR}/theme.dcol"
 fi
 { [ "${dcol_mode}" == "dark" ] && export BtnCol="white"; } || export BtnCol="black"
