@@ -5,6 +5,9 @@ xdg-desktop-portal-gtk                               # xdg desktop portal using 
 hyprpolkitagent
 qt5ct                                                  # qt5 configuration tool
 qt6ct                                                  # qt6 configuration tool
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
 
 
 # --------------------------------------------------- // System
