@@ -115,6 +115,15 @@ if [ ${flg_Install} -eq 1 ]; then
 
 EOF
 
+    #-------------------#
+    # 1Password GPG key #
+    #-------------------#
+
+    print_log -warn "1Password" " :: " "Trusting GPG key"
+    curl -sS https://downloads.1password.com/linux/keys/1password.asc | gpg --import
+
+
+
     #----------------------#
     # prepare package list #
     #----------------------#
@@ -146,6 +155,23 @@ EOF
     # install packages from the list #
     #--------------------------------#
     [ ${flg_DryRun} -eq 1 ] || "${SCR_DIR}/install_pkg.sh" "${SCR_DIR}/install_pkg.lst"
+
+
+    #----------------------------#
+    # verify 1password signature #
+    #----------------------------#
+
+    PKG_FILE=$(pacman -Qip "1password" 2>/dev/null | grep "Filename" | awk '{print $2}')
+    PKG_CACHE="/var/cache/pacman/pkg"
+
+    if [[ -f "$PKG_CACHE/$PKG_FILE" ]]; then
+        gpg --verify "$PKG_CACHE/$PKG_FILE.sig" "$PKG_CACHE/$PKG_FILE" || {
+            print_log -err "1Password" " :: " "Signature verification failed!"
+            exit 1
+        }
+        print_log -g "1Password" " :: " "Signature verifified!"
+    fi
+        
 fi
 
 #---------------------------#
