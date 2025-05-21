@@ -1,11 +1,11 @@
 com.github.tchx84.Flatseal                     # Flatseal
 io.github.flattool.Warehouse                   # Warehouse
-org.gnome.eog                                  # ImageViewer
-com.spotify.Client                             # Spotify
-com.github.rafostar.Clapper                    # Clapper - video player
+# org.gnome.eog                                  # ImageViewer
+# com.spotify.Client                             # Spotify
+# com.github.rafostar.Clapper                    # Clapper - video player
 com.brave.Browser                              # Brave
-io.github.spacingbat3.webcord                  # Webcord
-org.gimp.GIMP                                  # Gimp
+# io.github.spacingbat3.webcord                  # Webcord
+# org.gimp.GIMP                                  # Gimp
 
 # org.gnome.Boxes                              # Boxes - vms
 # io.gitlab.adhami3310.Impression              # Impression - usb creation
