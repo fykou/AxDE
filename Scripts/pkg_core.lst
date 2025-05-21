@@ -1,58 +1,63 @@
+# --------------------------------------------------- // Hyprland recommended
+hyprland                                               # wlroots-based wayland compositor
+xdg-desktop-portal-hyprland
+xdg-desktop-portal-gtk                               # xdg desktop portal using gtk
+hyprpolkitagent
+qt5ct                                                  # qt5 configuration tool
+qt6ct                                                  # qt6 configuration tool
+
+
 # --------------------------------------------------- // System
-pipewire                                               # audio/video server
-pipewire-alsa                                          # pipewire alsa client
-pipewire-audio                                         # pipewire audio client
-pipewire-jack                                          # pipewire jack client
-pipewire-pulse                                         # pipewire pulseaudio client
-gst-plugin-pipewire                                    # pipewire gstreamer client
-wireplumber                                            # pipewire session manager
-pavucontrol                                            # pulseaudio volume control
-pamixer                                                # pulseaudio cli mixer
-networkmanager                                         # network manager
-network-manager-applet                                 # network manager system tray utility
-bluez                                                  # bluetooth protocol stack
-bluez-utils                                            # bluetooth utility cli
-blueman                                                # bluetooth manager gui
-brightnessctl                                          # screen brightness control
-udiskie                                                # manage removable media
-openssh
-# xdg-desktop-portal-gtk                               # xdg desktop portal using gtk
+# pipewire                                               # audio/video server
+# pipewire-alsa                                          # pipewire alsa client
+# pipewire-audio                                         # pipewire audio client
+# pipewire-jack                                          # pipewire jack client
+# pipewire-pulse                                         # pipewire pulseaudio client
+# gst-plugin-pipewire                                    # pipewire gstreamer client
+# wireplumber                                            # pipewire session manager
+# pavucontrol                                            # pulseaudio volume control
+# pamixer                                                # pulseaudio cli mixer
+# networkmanager                                         # network manager
+# network-manager-applet                                 # network manager system tray utility
+# bluez                                                  # bluetooth protocol stack
+# bluez-utils                                            # bluetooth utility cli
+# blueman                                                # bluetooth manager gui
+# brightnessctl                                          # screen brightness control
+# udiskie                                                # manage removable media
+# openssh
+
 # wf-recorder                                          # Screen recorder for wlroots-based compositors such as sway
 
 # --------------------------------------------------- // Window Manager
-hyprland                                               # wlroots-based wayland compositor
-dunst                                                  # notification daemon
-rofi-wayland                                           # application launcher
-waybar                                                 # system bar
-swww                                                   # wallpaper
-hyprlock                                               # lock screen
-wlogout                                                # logout menu
-grim                                                   # screenshot tool
-hyprpicker                                             # color picker
-slurp                                                  # region select for screenshot/screenshare
-satty                                                  # Modern Screenshot Annotation
-cliphist                                               # clipboard manager
-hyprsunset                                             # blue light filter
+# dunst                                                  # notification daemon
+# rofi-wayland                                           # application launcher
+# waybar                                                 # system bar
+# swww                                                   # wallpaper
+# hyprlock                                               # lock screen
+# wlogout                                                # logout menu
+# grim                                                   # screenshot tool
+# hyprpicker                                             # color picker
+# slurp                                                  # region select for screenshot/screenshare
+# satty                                                  # Modern Screenshot Annotation
+# cliphist                                               # clipboard manager
+# hyprsunset                                             # blue light filter
 
 # --------------------------------------------------- // Dependencies
-polkit-gnome                                           # authentication agent
-# xdg-desktop-portal-hyprland                            # xdg desktop portal for hyprland
-# xdg-desktop-portal-gtk                                 # file picker and dbus  integration
+# polkit-gnome                                           # authentication agent
 # xdg-user-dirs                                          # Manage user directories like ~/Desktop and ~/Music
-pacman-contrib                                         # for system update check
-parallel                                               # for parallel processing
-jq                                                     # for json processing
-imagemagick                                            # for image processing
-qt5-imageformats                                       # for dolphin image thumbnails
-ffmpegthumbs                                           # for dolphin video thumbnails
-kde-cli-tools                                          # for dolphin file type defaults
-libnotify                                              # for notifications
-noto-fonts-emoji                                       # emoji font
+# pacman-contrib                                         # for system update check
+# parallel                                               # for parallel processing
+# jq                                                     # for json processing
+# imagemagick                                            # for image processing
+# qt5-imageformats                                       # for dolphin image thumbnails
+# ffmpegthumbs                                           # for dolphin video thumbnails
+# kde-cli-tools                                          # for dolphin file type defaults
+# libnotify                                              # for notifications
+# noto-fonts-emoji                                       # emoji font
 
 # --------------------------------------------------- // Theming
 # nwg-look                                               # gtk configuration tool
-# qt5ct                                                  # qt5 configuration tool
-# qt6ct                                                  # qt6 configuration tool
+
 # kvantum                                                # svg based qt6 theme engine
 # kvantum-qt5                                            # svg based qt5 theme engine
 # qt5-wayland                                            # wayland support in qt5
@@ -61,23 +66,23 @@ noto-fonts-emoji                                       # emoji font
 # --------------------------------------------------- // Applications
 kitty                                                  # terminal
 dolphin                                                # kde file manager
-ark                                                    # kde file archiver
-unzip                                                  # extracting zip files
-code                                                   # ide text editor
-nwg-displays                                           # monitor management utility
-fzf                                                    # Command-line fuzzy finder
+# ark                                                    # kde file archiver
+# unzip                                                  # extracting zip files
+# code                                                   # ide text editor
+# nwg-displays                                           # monitor management utility
+# fzf                                                    # Command-line fuzzy finder
 
 # --------------------------------------------------- // Shell
-zsh                                                    # zsh shell
-eza|zsh                                                # file lister for zsh
-starship|zsh                                           # customizable shell prompt written in Rust
-fastfetch                                              # system information fetch tool
-1password
+# zsh                                                    # zsh shell
+# eza|zsh                                                # file lister for zsh
+# starship|zsh                                           # customizable shell prompt written in Rust
+# fastfetch                                              # system information fetch tool
+# 1password
 
 # --------------------------------------------------- // HyDE
 
 # --------------------------------------------------- // Misc
-steam                                                  # gaming platform
+# steam                                                  # gaming platform
 # gamemode                                               # daemon and library for game optimizations
 # lutris                                                 # Lutris is an open source gaming platform for Linux
 # neovim                                                 # vim based text editor
