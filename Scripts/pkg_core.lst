@@ -10,6 +10,7 @@ noto-fonts-cjk
 noto-fonts-emoji
 
 1password
+openssh
 
 # --------------------------------------------------- // System
 # pipewire                                               # audio/video server
@@ -26,24 +27,25 @@ noto-fonts-emoji
 # bluez                                                  # bluetooth protocol stack
 # bluez-utils                                            # bluetooth utility cli
 # blueman                                                # bluetooth manager gui
-# brightnessctl                                          # screen brightness control
 # udiskie                                                # manage removable media
-# openssh
+
+# brightnessctl                                          # screen brightness control
+
 
 # wf-recorder                                          # Screen recorder for wlroots-based compositors such as sway
 
 # --------------------------------------------------- // Window Manager
-# dunst                                                  # notification daemon
-# rofi-wayland                                           # application launcher
-# waybar                                                 # system bar
+dunst                                                  # notification daemon
+rofi-wayland                                           # application launcher
+waybar                                                 # system bar
 # swww                                                   # wallpaper
 # hyprlock                                               # lock screen
 # wlogout                                                # logout menu
-# grim                                                   # screenshot tool
+grim                                                   # screenshot tool
 # hyprpicker                                             # color picker
-# slurp                                                  # region select for screenshot/screenshare
+slurp                                                  # region select for screenshot/screenshare
 # satty                                                  # Modern Screenshot Annotation
-# cliphist                                               # clipboard manager
+cliphist                                               # clipboard manager
 # hyprsunset                                             # blue light filter
 
 # --------------------------------------------------- // Dependencies

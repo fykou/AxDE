@@ -32,7 +32,7 @@ B = Backup - Backup the target
 S|${HOME}/.config/hypr|hyprland.conf|hyprland
 S|${HOME}/.config/hypr|workflows.conf animations.conf windowrules.conf keybindings.conf userprefs.conf monitors.conf|hyprland
 S|${HOME}/.config/hypr|nvidia.conf|hyprland nvidia-utils
-S|${HOME}/.config/hypr|animations|hyprland  
+S|${HOME}/.config/hypr|animations|hyprland
 S|${HOME}/.config/hypr|workflows|hyprland
 
 # S|${HOME}/.config/hypr/themes|theme.conf wallbash.conf colors.conf|hyprland
@@ -56,8 +56,8 @@ S|${HOME}/.local|lib|hyprland
 # S|${HOME}/.config/VSCodium/User|settings.json|vscodium
 # 
 #  Bar 
-S|${HOME}/.config/waybar|config.ctl|waybar
-S|${HOME}/.config/waybar|modules config.jsonc theme.css style.css|waybar
+# S|${HOME}/.config/waybar|config.ctl|waybar
+# S|${HOME}/.config/waybar|modules config.jsonc theme.css style.css|waybar
 # 
 #  Terminal 
 # S|${HOME}/.config|lsd|lsd
